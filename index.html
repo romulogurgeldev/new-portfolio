@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Portfolio Website</title>
+    <link rel="shortcut icon" href="favicon.icon" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Portfolio</a>
+        <div class="nav">
+            <a href="#home">Home</a>
+            <a href="#service">Service</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+        </div>
+    </header>
+    <!-- home section -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, I'm</h3>
+            <h1>Rômulo Gurgel</h1>
+            <h3>FullStack <span>Developer</span></h3>
+            <p>Hic voluptatum qui quidem sit vel minus quasi ipsa ipsum similique dolores voluptatem deserunt ab maxime
+                saepe aspernatur, magnam soluta atque, eaque quibusdam dignissimos natus expedita reiciendis harum
+            </p>
+            <div class="social-media">
+                <a href="#"><i class='bx bxl-github'></i></a>
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+            </div>
+            <div>
+                <a href="" class="btn">Download CV</a>
+            </div>
+        </div>
+        <div class="home-img">
+            <img src="./assets/profile.png" alt="Profile picture">
+        </div>
+    </section>
+    <!-- /home section -->
+
+    <!-- service section -->
+    <section class="services" id="services">
+        <h2 class="heading">Our <span>Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web Development</h3>
+                <p>Enim voluptate voluptas doloribus beatae dicta qui officia reprehenderit, corporis repellat,
+                    debitis deleniti impedit doloremque eveniet fugiat, nulla at repellendus.
+                </p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-code-curly' ></i>
+                <h3>Back-end Development</h3>
+                <p>Enim voluptate voluptas doloribus beatae dicta qui officia reprehenderit, corporis repellat,
+                    debitis deleniti impedit doloremque eveniet fugiat, nulla at repellendus.
+                </p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-mobile-alt'></i>
+                <h3>Mobile Development</h3>
+                <p>Enim voluptate voluptas doloribus beatae dicta qui officia reprehenderit, corporis repellat,
+                    debitis deleniti impedit doloremque eveniet fugiat, nulla at repellendus.
+                </p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+    </section>
+
+    <!-- /service section -->
+
+    <!-- portfolio section -->
+
+    <section class="portfolio" id="portfolio">
+        <h2>Latest <span>Projects</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="./assets/agenda-caixa-photo.jpg" alt="Portfolio 1">
+
+                <div class="portfolio-layer">
+                    <h4>Agenda e Caixa</h4>
+                    <p>Aplicação de agenda e caixa feita com Angular e Springboot. Possui um sistema de login e cadastro de usuários, além de um sistema de agenda e caixa, onde é possível adicionar, editar e excluir eventos e movimentações financeiras.
+                    </p>
+
+                    <a href="https://github.com/romulogurgeldev/Agenda-Angular-Springboot"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="./assets/landinpage-photo.png" alt="Portfolio 2">
+
+                <div class="portfolio-layer">
+                    <h4>Landing Page</h4>
+                    <p>Landing page feita com HTML, CSS e JavaScript. Possui um sistema de navegação suave e responsivo, além de um formulário de contato, a localização da empresa por meio
+                    do Google Maps, um sistema de carrossel de imagens e um
+                    sistema de navegação suave.
+                    </p>
+
+                    <a href="https://romulogurgeldev.github.io/LandingPage-Digital/"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="./assets/torre-hanoi-photo.png" alt="Portfolio 3">
+
+                <div class="portfolio-layer">
+                    <h4>Torre de Hanoi</h4>
+                    <p>Jogo da Torre de Hanoi feito com HTML, CSS e
+                        JavaScript. Possui um sistema de navegação suave e responsivo. Jogo de lógica onde o objetivo é mover todos os discos de uma haste para outra, respeitando a regra de que um disco maior não pode ficar sobre um disco menor. Criado com o intuito de praticar a lógica de programação, e instigar o meu filho ao aprendizado de lógica de programação.
+                    </p>
+
+                    <a href="https://romulogurgeldev.github.io/Torre-de-Hanoi/"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- /portfolio section -->
+
+    <!-- contact section -->
+
+    <section class="contact" id="contact">
+        <h2>Contact <span>Us</span></h2>
+        <form action="">
+            <div class="inputBox">
+                <input type="text" name="name" required="required" placeholder="full name">
+                <input type="email" name="email" required="required" placeholder="email">
+            </div>
+            <div class="inputBox">
+                <input type="number" placeholder="Phone number">
+                <input type="text" placeholder="subject">
+            </div>
+
+                <textarea cols="30" rows="8" placeholder="Message"></textarea>
+
+                <a href="#" class="btn">Send Message</a>
+        </form>
+        
+    </section>
+
+    <!-- /contact section -->
+
+    <!-- about section -->
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="./assets/profile.png" alt="About me">
+        </div>
+        <div class="about-content">
+            <h3>About Me</h3>
+            <h1>FullStack <span>Developer</span></h1>
+
+            <p>
+                Desenvolvedor FullStack apaixonado por inovação tecnológica, com foco contínuo em soluções escaláveis e de alto desempenho. Comprometido com o aprendizado contínuo e aprimoramento de habilidades, trago uma abordagem proativa e orientada a resultados, com forte capacidade analítica e comunicação eficaz. Especialista em trabalho colaborativo, resolução de desafios complexos e melhoria da experiência do usuário final. Estou sempre em busca de oportunidades para contribuir com projetos de impacto, impulsionando o sucesso de equipes e organizações por meio de tecnologia de ponta.
+            </p>
+
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <!-- /about section -->
+
+    <footer>
+        <p>Copyright &copy; 2025 by &lt;/Rômulo Gurgel&gt;. All rights reserved.</p>
+    </footer>
+</body>
+<script src="./script/script.js"></script>
+
+</html>
