@@ -222,9 +222,13 @@ span{
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    text-overflow: ellipsis;
+    /* text-overflow: ellipsis; */
+    transition: all 0.3s ease;
 }
 
+.services-box p.expanded {
+    -webkit-line-clamp: unset; /* Remove o limite e mostra todo o texto */
+}
 .portfolio{
     background-color: var(--bg-color-02);
 }
