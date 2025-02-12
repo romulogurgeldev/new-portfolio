@@ -57,7 +57,18 @@ header{
     cursor: default;
 }
 
-.nav a{
+.nav-responsive{
+    display: none;
+    position: absolute; 
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--bg-color-01);
+    box-shadow: 0 2px 5px var(--color-00);
+}
+
+.nav a, .nav-responsive a{
     font-size: 1.2rem;
     color: var(--text-color);
     padding: 0.5rem 1rem;
@@ -65,7 +76,7 @@ header{
 
 }
 
-.nav a:hover{
+.nav a:hover, .nav-responsive a:hover{
     color: var(--main-color);
 }
 
@@ -378,7 +389,7 @@ footer{
         display: none;
     }
 
-    .nav-responsive{
+    .nav-responsive a{
         display: block;
         font-size: 1.2rem;
         margin: 0.5rem 0;
@@ -425,11 +436,12 @@ footer{
         grid-template-columns: auto;
         gap: 1rem;
         margin-left: 0;
+        justify-content: center;
     }
 
     .portfolio-box {
-        width: 300px;
-        height: 300px;
+        width: 250px;
+        height: 250px;
     }
     
     .portfolio-layer h4{
@@ -455,10 +467,12 @@ footer{
     .services-box{
         width: 70%;
     }
-
 }
 /* tablet */
 @media(min-width:768px){
+    .nav{
+        display: flex;
+    }
     .menu-hamburguer{
         display: none;
     }
@@ -513,7 +527,7 @@ footer{
 /* notebook */
 @media(min-width:992px){
     .home-img, .about-img{
-        max-width: 35%;
+        max-width: 20%;
     }
 
     .services-container{
@@ -525,7 +539,7 @@ footer{
 /* desktop */
 @media(min-width:1200px){
     .home-img, .about-img{
-        max-width: 25%;
+        max-width: 20%;
     }
 
     .home-content h1{
